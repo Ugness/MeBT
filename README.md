@@ -5,3 +5,6 @@ Jaehoon Yoo, Semin Kim, Doyup Lee, Chiheon Kim, Seunghoon Hong
 [[Project Page]](https://sites.google.com/view/mebt-cvpr2023/home)
 
 The code will be available soon!
+
+## Acknowledgements
+The development of this open-sourced code was supported in part by the National Research Foundation of Korea (NRF) (No. 2021R1A4A3032834).
