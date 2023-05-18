@@ -5,9 +5,9 @@ This repository is an official implementation of the paper:
 Jaehoon Yoo, Semin Kim, Doyup Lee, Chiheon Kim, Seunghoon Hong  
 [Project Page](https://sites.google.com/view/mebt-cvpr2023/home) | [Paper](https://arxiv.org/abs/2303.11251)
 
-![](https://lh5.googleusercontent.com/uIuzFogyzinevuuGhdpVKHMKj2wU6tXfEor8kkXkVaC4-WYXLVyDWPGNtxelr7ImCIvdsxRyg6kvQtd2YB7H9OpyDKY19hfU84usQh6vbH2H-4R44RvMZ_1iYMVIcemsRQ=w1280)
-![](https://lh3.googleusercontent.com/u70prQpvj7Ser1gCFRcr-Rmue6T3T93xptV1xXiVti8bUZ4Mwrb_MnsBV8hqBhpha9Fur3UKIpcOSlgmtRuFQNVx4G9m8bn5VvRV47Y3R_yYPT_Z7tl61tb9YBaeUJGQiw=w1280)
-![](https://lh4.googleusercontent.com/h4BTzMPPU_M_XRsGGJAqUKO47VYiQNsr4ALUm75XUtARWXdg-dT5UfvC-LJPQRZSnZ6HFnZZ86NPQzE81LgjM-xh6u4r3iAtFJWWKAllNohu8-4HsLwl_7ujejWvhNWq2g=w1280)
+![](readme_figs/stl.gif)
+![](readme_figs/taichi.gif)
+![](readme_figs/ucf.gif)
 
 ## Setup
 We installed the packages specified in `requirements.txt` based on [this docker image](https://hub.docker.com/layers/pytorch/pytorch/1.10.0-cuda11.3-cudnn8-devel/images/sha256-913e6689c5958b187e65561e528ec6c3ce8a02deedcdd38cb50c9cab301907bb?context=explore) 
