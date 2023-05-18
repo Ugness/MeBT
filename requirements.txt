@@ -1,0 +1,15 @@
+einops
+ftfy
+h5py
+imageio
+pytorch-lightning==1.7.5
+regex
+scikit-video
+tqdm
+imageio-ffmpeg
+moviepy
+av
+omegaconf==2.1.0
+pandas
+matplotlib
+pillow==8.4.0

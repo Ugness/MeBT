@@ -1,0 +1,83 @@
+model:
+    target: mebt.transformer.Net2NetTransformer
+    params:
+        unconditional: True
+        vocab_size: 16384
+        first_stage_vocab_size: 16384
+        block_size: 8192
+        n_layer: 24
+        n_head: 16
+        n_embd: 1024
+        n_unmasked: 0
+        embd_pdrop: 0.1
+        resid_pdrop: 0.1
+        attn_pdrop: 0.1
+        sample_every_n_latent_frames: 0
+        first_stage_key: video
+        cond_stage_key: label
+        vtokens: False
+        vtokens_pos: False
+        vis_epoch: 100
+        sos_emb: 256
+        avg_loss: True
+        t_prior: gaussian2
+        mode:
+            - latent_enc
+            - latent_self
+            - latent_enc
+            - latent_self
+            - latent_enc
+            - latent_self
+            - latent_enc
+            - latent_self
+            - latent_enc
+            - latent_self
+            - latent_enc
+            - latent_self
+            - latent_enc
+            - latent_dec
+            - lt2l
+            - latent_dec
+            - lt2l
+            - latent_dec
+            - lt2l
+            - latent_dec
+            - lt2l
+            - latent_dec
+            - lt2l
+            - latent_dec
+    mask:
+        target: mebt.mask_sampler.MaskGen
+        params:
+            iid: False
+            schedule: linear
+            max_token: 8192
+            method: 'mlm'
+            shape: [32, 16, 16]
+            t_range: [0.0, 1.0]
+            budget: 8192
+
+    vqvae:
+        params:
+            ckpt_path: 'ckpts/vqgan_sky_128_488_epoch=12-step=29999-train.ckpt'
+            ignore_keys: ['loss']
+
+data:
+    data_path: 'datasets/vqgan_data/stl_128'
+    sequence_length: 128
+    resolution: 128
+    batch_size: 5
+    num_workers: 8
+    image_channels: 3
+    smap_cond: 0
+    smap_only: False
+    text_cond: False
+    vtokens: False
+    vtokens_pos: False
+    spatial_length: 8
+    sample_every_n_frames: 1
+    image_folder: True
+    stft_data: False
+
+exp:
+    exact_lr: 1.8e-5
