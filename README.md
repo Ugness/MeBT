@@ -20,7 +20,7 @@ pip install requirements.txt
 ```
 
 ## Datasets
-### Download datasets
+### Download
 * [UCF-101](https://www.crcv.ucf.edu/data/UCF101.php)
 * [Sky-Timelapse](https://github.com/weixiong-ur/mdgan)
 * [Taichi](https://github.com/AliaksandrSiarohin/first-order-model/blob/master/data/taichi-loading/README.md)
